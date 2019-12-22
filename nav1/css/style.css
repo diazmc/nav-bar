@@ -119,4 +119,8 @@ nav ul li a:hover::after {
     .menu-icon {
         display: block;
     }
+
+    nav ul li a::after {
+        display: none;
+    }
 }

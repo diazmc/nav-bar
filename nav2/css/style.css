@@ -71,7 +71,7 @@ nav.black ul {
     border: 1px solid #fff;
     background: #fff;
     border-radius: 5px;
-    padding: 20px 40px;
+    padding: 15px 40px;
     cursor: pointer;
 }
 
@@ -96,10 +96,61 @@ nav.black ul {
 
 .menu-icon {
     width: 100%;
-    text-align: right;  
+    text-align: right;
     box-sizing: border-box;
     background: #000;
     padding: 20px 30px;
     cursor: pointer;
     display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .nav-items {
+        max-height: 0;
+        background: #000;
+        margin-right: 0;
+    }
+
+    .nav-items li:last-child {
+        border: none;
+        background: none;
+    }
+
+    .nav-items li:last-child a {
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .nav-link a::after {
+        display: none;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+    .nav-link {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
